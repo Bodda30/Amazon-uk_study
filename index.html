@@ -5,65 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon UK Customer Service Study</title>
     <style>
-        /* CSS for colors and smooth scrolling */
+        /* Base Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #e6f0f8; /* Soothing light blue background */
+            background-color: #f4f7f6; /* Light neutral background */
             color: #333;
         }
 
         header {
-            background-color: #1c3d5a;
+            background-color: #34495e;
             color: white;
             text-align: center;
             padding: 2rem;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-
         main {
             padding: 2rem;
-            background-color: white;
+            background-color: #fff;
             margin: 1rem auto;
             max-width: 900px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         h1, h2, h3 {
-            color: #1c3d5a;
+            color: #34495e;
         }
 
+        /* Styling for square fields with shadows */
         .order-type {
-            margin-bottom: 2.5rem;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            padding: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
         }
 
-        ul {
-            margin: 0;
-            padding-left: 1.5rem;
+        .order-type:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Initially hide details */
+        .order-details {
+            display: none;
+            padding-top: 1rem;
+        }
+
+        /* Add smooth transition */
+        .order-type.active .order-details {
+            display: block;
         }
 
         footer {
             text-align: center;
             padding: 1rem;
-            background-color: #1c3d5a;
+            background-color: #34495e;
             color: white;
             position: fixed;
             bottom: 0;
             width: 100%;
         }
 
-        /* Smooth scroll */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Navigation for easier scrolling */
+        /* Navigation */
         nav {
             text-align: center;
             margin-bottom: 1.5rem;
@@ -71,28 +77,16 @@
 
         nav a {
             text-decoration: none;
-            color: #1c3d5a;
+            color: #34495e;
             padding: 0.5rem 1rem;
             margin: 0 0.5rem;
-            background-color: #cce7ff;
+            background-color: #d6eaf8;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
         nav a:hover {
-            background-color: #b0d4f1;
-        }
-
-        /* Hover effect for sections */
-        .order-type:hover {
-            background-color: #f2f8ff;
-            border-radius: 8px;
-            transition: background-color 0.3s ease;
-            padding: 10px;
-        }
-
-        /* Smooth transitions for scrolling and hover */
-        .order-type {
-            transition: background-color 0.3s ease;
+            background-color: #aed6f1;
         }
     </style>
 </head>
@@ -100,7 +94,7 @@
 
     <header>
         <h1>Amazon UK Customer Service Study</h1>
-        <p>A comprehensive guide for handling different types of orders</p>
+        <p>Click on the order types to see more details</p>
     </header>
 
     <nav>
@@ -111,36 +105,48 @@
     </nav>
 
     <main>
+        <!-- AFN Section -->
         <section id="afn" class="order-type">
             <h2>1- AFN: Amazon Fulfillment Network</h2>
-            <p><strong>Sold:</strong> Fulfilled by Amazon (Prime covered)</p>
-            <p><strong>Actions:</strong> Full refund, replacement, repair, discounts</p>
+            <div class="order-details">
+                <p><strong>Sold:</strong> Fulfilled by Amazon (Prime covered)</p>
+                <p><strong>Actions:</strong> Full refund, replacement, repair, discounts</p>
+            </div>
         </section>
 
+        <!-- FBA Section -->
         <section id="fba" class="order-type">
             <h2>2- FBA: Fulfilled by Amazon</h2>
-            <p><strong>Sold:</strong> Sold by seller, fulfilled and delivered by Amazon (Prime covered)</p>
-            <p><strong>Actions:</strong> Full refund</p>
+            <div class="order-details">
+                <p><strong>Sold:</strong> Sold by seller, fulfilled and delivered by Amazon (Prime covered)</p>
+                <p><strong>Actions:</strong> Full refund</p>
+            </div>
         </section>
 
+        <!-- CSBA Section -->
         <section id="csba" class="order-type">
             <h2>3- CSBA: Customer Service by Amazon</h2>
-            <p><strong>Sold:</strong> Fulfilled by seller, customer service and delivery by Amazon (Prime covered)</p>
-            <p><strong>Actions:</strong> Full refund</p>
+            <div class="order-details">
+                <p><strong>Sold:</strong> Fulfilled by seller, customer service and delivery by Amazon (Prime covered)</p>
+                <p><strong>Actions:</strong> Full refund</p>
+            </div>
         </section>
 
+        <!-- MFN Section -->
         <section id="mfn" class="order-type">
             <h2>4- MFN: Marketplace Fulfillment Network</h2>
-            <p><strong>Sold:</strong> Sold, fulfilled, delivered, and customer service by the seller. Amazon is just a platform.</p>
-            <p><strong>Actions:</strong> Contact seller via email.</p>
-            <p>Seller has 2 days to respond. The response will appear in the message center, and the customer can reply.</p>
-            <p>If the seller doesn’t respond in 48 hours, an A-Z claim can be raised. Wait until EDD+3 days pass before raising the claim.</p>
-            <p>A-Z claims team will take over the case within 7 days.</p>
-            <p><strong>Max Periods:</strong></p>
-            <ul>
-                <li>A-Z claim: 6 months</li>
-                <li>Appeal if rejected: 30 days</li>
-            </ul>
+            <div class="order-details">
+                <p><strong>Sold:</strong> Sold, fulfilled, delivered, and customer service by the seller. Amazon is just a platform.</p>
+                <p><strong>Actions:</strong> Contact seller via email.</p>
+                <p>Seller has 2 days to respond. The response will appear in the message center, and the customer can reply.</p>
+                <p>If the seller doesn’t respond in 48 hours, an A-Z claim can be raised. Wait until EDD+3 days pass before raising the claim.</p>
+                <p>A-Z claims team will take over the case within 7 days.</p>
+                <p><strong>Max Periods:</strong></p>
+                <ul>
+                    <li>A-Z claim: 6 months</li>
+                    <li>Appeal if rejected: 30 days</li>
+                </ul>
+            </div>
         </section>
     </main>
 
@@ -149,7 +155,13 @@
     </footer>
 
     <script>
-        // If we need to add interactivity later, it can go here.
+        // JavaScript to toggle details on click
+        document.querySelectorAll('.order-type').forEach(section => {
+            section.addEventListener('click', function() {
+                // Toggle active class to show/hide details
+                this.classList.toggle('active');
+            });
+        });
     </script>
 
 </body>
