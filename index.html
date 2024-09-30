@@ -69,7 +69,7 @@
             padding: 1rem;
             background-color: #00796b; /* Teal */
             color: white;
-            position: relative; /* Changed to relative for proper alignment */
+            position: relative;
             bottom: 0;
             width: 100%;
             margin-top: 2rem;
@@ -124,21 +124,6 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        /* Button styles */
-        .translate-button {
-            background-color: #dcedc8; /* Light green */
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-            margin-top: 1rem;
-        }
-
-        .translate-button:hover {
-            background-color: #c5e1a5; /* Darker green */
-        }
-
         /* Knowledge Center Styles */
         .knowledge-center {
             margin-top: 2rem;
@@ -168,7 +153,6 @@
 
     <header>
         <h1>Amazon UK Customer Service Study</h1>
-        <button class="translate-button" onclick="translateToArabic()">Translate to Arabic</button>
         <p>Click on the order types to see more details</p>
     </header>
 
@@ -222,6 +206,93 @@
             </div>
         </section>
 
+<!-- Existing Code Structure -->
+
+<!-- Add the new Amazon CTS Section here -->
+<section id="amazon-cts">
+  <h2>Amazon CTS</h2>
+
+  <h3>Never Do List</h3>
+  <ul>
+    <li><strong>Never Ignore the Customer:</strong> Always acknowledge the customer's presence and their issues promptly.</li>
+    <li><strong>Never Be Rude or Disrespectful:</strong> Maintain a polite and respectful tone, regardless of the customer's attitude.</li>
+    <li><strong>Never Interrupt the Customer:</strong> Let the customer finish speaking before you respond.</li>
+    <li><strong>Never Blame the Customer:</strong> Avoid placing blame on the customer for the problem they are experiencing.</li>
+    <li><strong>Never Make Promises You Can't Keep:</strong> Only commit to actions you can deliver on to maintain trust.</li>
+    <li><strong>Never Use Negative Language:</strong> Avoid phrases like “you can’t,” “I won’t,” “it’s not possible.” Instead, focus on what you can do.</li>
+    <li><strong>Never Argue with the Customer:</strong> Stay calm and professional, even if the customer is angry or unreasonable.</li>
+    <li><strong>Never Give Incomplete Information:</strong> Provide clear, complete, and accurate information to the customer.</li>
+    <li><strong>Never Transfer Without Explanation:</strong> Always explain why a transfer is necessary and ensure the customer is connected to the right person.</li>
+    <li><strong>Never Leave the Customer on Hold for Too Long:</strong> If a hold is necessary, check in regularly and explain the reason for the wait.</li>
+    <li><strong>Never Show a Lack of Knowledge:</strong> Be knowledgeable about your products or services and seek help if you are unsure about something.</li>
+    <li><strong>Never Dismiss Customer Complaints:</strong> Treat all complaints seriously and investigate them thoroughly.</li>
+    <li><strong>Never Take Criticism Personally:</strong> Remain objective and focus on resolving the issue rather than reacting emotionally.</li>
+    <li><strong>Never Use Technical Jargon:</strong> Avoid using technical terms that the customer might not understand; use simple and clear language.</li>
+    <li><strong>Never Rush the Customer:</strong> Allow the customer to express their concerns fully without making them feel hurried.</li>
+    <li><strong>Never Fail to Follow Up:</strong> If a follow-up is promised, ensure it is done in a timely manner to show the customer that their issue is important.</li>
+  </ul>
+
+  <h3>Practical Examples and Alternatives</h3>
+  <ul>
+    <li>Instead of "I don’t know," say: <em>"Let me find that information for you."</em></li>
+    <li>Instead of "That’s not my job," say: <em>"Let me connect you with the person who can help you."</em></li>
+    <li>Instead of "You’re wrong," say: <em>"I understand your perspective. Let’s look at this together."</em></li>
+    <li>Instead of "Calm down," say: <em>"I can see that this is frustrating. Let’s see how we can resolve it."</em></li>
+    <li>Instead of "We can’t do that," say: <em>"Here’s what we can do to help."</em></li>
+  </ul>
+
+  <h3>Types of Orders</h3>
+  <ul>
+    <li><strong>AFN:</strong> (Sold and fulfilled by Amazon)
+      <ul>
+        <li>Refund</li>
+        <li>Replacement</li>
+        <li>Repair</li>
+        <li>Discount</li>
+      </ul>
+    </li>
+    <li><strong>FBA:</strong> (Fulfilled by Amazon, sold by third party seller)
+      <ul>
+        <li>Refund only</li>
+      </ul>
+    </li>
+    <li><strong>CSBA:</strong> (Customer service by Amazon, sold and fulfilled by third party seller)
+      <ul>
+        <li>Refund only</li>
+        <li>Contact seller to confirm the return</li>
+        <li>Contact seller in case of delay</li>
+        <li>Contact seller for product troubleshooting</li>
+      </ul>
+    </li>
+    <li><strong>MFN:</strong> (Market place Fulfillment Network, sold and fulfilled by third party seller)
+      <ul>
+        <li>Warranty by the seller</li>
+        <li>Shipping fees set by the seller</li>
+        <li>The only type of order which is not covered by Prime</li>
+        <li><em>Note:</em> Advice to contact the seller for requests</li>
+      </ul>
+    </li>
+    <li><strong>Warehouse Deals:</strong> (AFN items but used/missing accessories)
+      <ul>
+        <li>Refund</li>
+        <li>Discount</li>
+      </ul>
+    </li>
+    <li><strong>Global Store:</strong> (Amazon sites)
+      <ul>
+        <li>Refund on return only</li>
+      </ul>
+    </li>
+    <li><strong>Try Before You Buy:</strong> (Amazon Wardrobe)
+      <ul>
+        <li>For Prime members only</li>
+        <li>Ship up to 6 items at a time to try on free at home for 7 days</li>
+        <li>Charged only for the items selected to keep</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+        
         <!-- MFN Section -->
         <section id="mfn" class="order-type">
             <h2>4- MFN: Marketplace Fulfillment Network</h2>
@@ -250,143 +321,34 @@
             <ul>
                 <li><strong>About Amazon UK:</strong> Amazon UK is one of the largest online retailers, offering a wide range of products from electronics to household items.</li>
                 <li><strong>Customer Support:</strong> Amazon UK provides various customer support options, including live chat, email support, and phone assistance to help customers resolve issues effectively.</li>
-                <li><strong>Customer Service Training:</strong> Amazon emphasizes training for its customer service agents to ensure they are knowledgeable and equipped to handle customer inquiries.</li>
-                <li><strong>Prime Membership:</strong> Amazon Prime offers members benefits like free shipping, access to streaming services, and exclusive deals.</li>
-                <li><strong>Return Policies:</strong> Amazon UK has a customer-friendly return policy, allowing customers to return items within a specific period for a full refund.</li>
-                <li><strong>Account Management:</strong> Customers can manage their accounts easily through the Amazon app or website, accessing order history, preferences, and more.</li>
-                <li><strong>Feedback System:</strong> Amazon encourages customers to leave feedback on purchases to improve service and product offerings.</li>
-                <li><strong>Community Engagement:</strong> Amazon UK engages with the community through various initiatives, including supporting local businesses and sustainability efforts.</li>
-                <li><strong>Shipping Options:</strong> Amazon UK offers various shipping options, including same-day delivery in select areas and next-day delivery for Prime members.</li>
-                <li><strong>Gift Services:</strong> Customers can send gifts directly through Amazon UK, complete with gift wrapping and personalized messages.</li>
-                <li><strong>Digital Content:</strong> Amazon UK provides access to a vast library of digital content, including ebooks, music, and movies through Amazon Prime Video and Kindle services.</li>
-                <li><strong>Subscription Services:</strong> Amazon UK offers subscription services like Subscribe & Save, allowing customers to save on recurring purchases.</li>
+                <li><strong>Handling Returns:</strong> Amazon UK offers a generous returns policy, allowing customers to return most items within a specific timeframe for a full refund or replacement.</li>
+                <li><strong>Delivery Services:</strong> Amazon UK provides fast and reliable delivery services, with options such as same-day delivery and next-day delivery for Prime members.</li>
             </ul>
         </div>
 
-        <!-- How to Handle Customers Section -->
-        <div class="handle-customers-section" id="handle-customers">
-            <h2>How to Handle Customers</h2>
-            <p>To effectively handle customers, consider the following tips:</p>
-            <ul>
-                <li>Remain calm and composed, even in challenging situations.</li>
-                <li>Use active listening techniques to fully understand customer concerns.</li>
-                <li>Empathize with the customer’s feelings and validate their emotions.</li>
-                <li>Offer clear and concise solutions to their problems.</li>
-                <li>Follow up with customers after resolving their issues to ensure satisfaction.</li>
-                <li>Be knowledgeable about products and services to provide accurate information.</li>
-                <li>Stay positive and friendly, even when faced with difficult customers.</li>
-                <li>Utilize available resources and tools to assist customers effectively.</li>
-                <li>Be patient and allow customers to express their frustrations without interruption.</li>
-                <li>Maintain professionalism and avoid taking customer complaints personally.</li>
-                <li>Keep communication clear and free of jargon.</li>
-                <li>Ask open-ended questions to gather more information.</li>
-                <li>Document customer interactions for future reference and improvement.</li>
-                <li>Train regularly on customer service best practices and updates.</li>
-            </ul>
-        </div>
-
-        <!-- Empathy and Sympathy Examples Section -->
-        <div class="empathy-sympathy">
-            <h2>Empathy and Sympathy Examples</h2>
-            <ul>
-                <li><strong>Example of Empathy:</strong> "I understand how frustrating it must be to receive a damaged item. I'm here to help you resolve this." </li>
-                <li><strong>Example of Sympathy:</strong> "I'm so sorry to hear that you've had a bad experience. Let’s work together to make it right."</li>
-                <li><strong>Example of Empathy:</strong> "It sounds like you've been going through a tough time with your order. Let’s see how we can fix this for you." </li>
-                <li><strong>Example of Sympathy:</strong> "I completely understand your concern regarding the late delivery. I would feel the same way in your situation."</li>
-                <li><strong>Example of Empathy:</strong> "Your frustration is valid, and I’m here to assist you in finding a solution." </li>
-                <li><strong>Example of Sympathy:</strong> "I regret that you’ve faced this issue. Let's work to ensure it doesn’t happen again." </li>
-            </ul>
-        </div>
-
-        <!-- A to Z Information for Success Section -->
+        <!-- A to Z Section -->
         <div class="a-z-section" id="a-z">
-            <h2>A to Z Information for Success</h2>
-            <ul>
-                <li><strong>A:</strong> Active Listening: Ensure you listen to the customer's needs and concerns.</li>
-                <li><strong>B:</strong> Build Rapport: Create a positive connection with customers.</li>
-                <li><strong>C:</strong> Communication Skills: Clearly convey information and solutions.</li>
-                <li><strong>D:</strong> Document interactions: Keep records of customer interactions for future reference.</li>
-                <li><strong>E:</strong> Empathy: Show understanding and compassion towards the customer’s feelings.</li>
-                <li><strong>F:</strong> Follow up: Ensure to follow up with customers after resolving their issues.</li>
-                <li><strong>G:</strong> Goal-oriented: Aim to achieve a positive outcome for the customer.</li>
-                <li><strong>H:</strong> Honesty: Be honest about what you can and cannot do.</li>
-                <li><strong>I:</strong> Information: Provide accurate and relevant information promptly.</li>
-                <li><strong>J:</strong> Justify actions: Explain why certain actions were taken to the customer.</li>
-                <li><strong>K:</strong> Keep calm: Maintain composure, even when faced with difficult customers.</li>
-                <li><strong>L:</strong> Listen: Pay attention to both verbal and non-verbal cues.</li>
-                <li><strong>M:</strong> Manage stress: Stay calm, even during challenging interactions.</li>
-                <li><strong>N:</strong> Non-defensive: Take customer feedback constructively.</li>
-                <li><strong>O:</strong> Offer alternatives: If a solution isn’t available, provide alternatives.</li>
-                <li><strong>P:</strong> Personalize service: Use the customer's name and personalize interactions.</li>
-                <li><strong>Q:</strong> Quick response: Aim to resolve issues in a timely manner.</li>
-                <li><strong>R:</strong> Respect: Treat every customer with respect and kindness.</li>
-                <li><strong>S:</strong> Stay calm: Keep your composure, even if the customer is upset.</li>
-                <li><strong>T:</strong> Tone of voice: Maintain a friendly and approachable tone.</li>
-                <li><strong>U:</strong> Understand policies: Familiarize yourself with Amazon’s return and refund policies.</li>
-                <li><strong>V:</strong> Validate feelings: Let customers know their feelings are valid.</li>
-                <li><strong>W:</strong> Willingness to help: Show enthusiasm in helping the customer.</li>
-                <li><strong>X:</strong> eXpectations: Manage customer expectations realistically.</li>
-                <li><strong>Y:</strong> You matter: Make customers feel valued and important.</li>
-                <li><strong>Z:</strong> Zeal for service: Approach every interaction with passion and dedication.</li>
-                <li><strong>A:</strong> Adaptability: Be flexible and adjust your approach based on the customer’s mood.</li>
-                <li><strong>B:</strong> Brevity: Keep communication concise to respect the customer’s time.</li>
-                <li><strong>C:</strong> Curiosity: Ask questions to better understand the customer’s situation.</li>
-                <li><strong>D:</strong> Diligence: Follow through on promises made to the customer.</li>
-                <li><strong>E:</strong> Enthusiasm: Bring energy to interactions; positivity is contagious.</li>
-                <li><strong>F:</strong> Familiarity: Know your products well to answer questions quickly.</li>
-                <li><strong>G:</strong> Gratitude: Thank customers for their patience and feedback.</li>
-                <li><strong>H:</strong> Humility: Admit when you don’t know something; find the answer instead.</li>
-                <li><strong>I:</strong> Initiative: Go above and beyond to meet customer needs.</li>
-                <li><strong>J:</strong> Judgment: Use sound judgment when assessing customer situations.</li>
-                <li><strong>K:</strong> Knowledge: Stay updated on product information and policies.</li>
-                <li><strong>L:</strong> Loyalty: Encourage repeat business through exceptional service.</li>
-                <li><strong>M:</strong> Mindfulness: Be present in the moment during customer interactions.</li>
-                <li><strong>N:</strong> Networking: Connect with other agents for knowledge sharing.</li>
-                <li><strong>O:</strong> Ownership: Take responsibility for customer issues until resolved.</li>
-                <li><strong>P:</strong> Positivity: Approach each interaction with a positive mindset.</li>
-                <li><strong>Q:</strong> Quality assurance: Ensure consistent and high-quality service.</li>
-                <li><strong>R:</strong> Responsiveness: Respond to inquiries quickly and effectively.</li>
-                <li><strong>S:</strong> Solutions-oriented: Focus on finding solutions rather than dwelling on problems.</li>
-                <li><strong>T:</strong> Training: Regularly participate in training to enhance skills.</li>
-                <li><strong>U:</strong> Uniqueness: Tailor your approach to each customer's needs.</li>
-                <li><strong>V:</strong> Vigilance: Stay alert to customer cues and feedback.</li>
-                <li><strong>W:</strong> Willingness to learn: Seek feedback to improve your skills.</li>
-                <li><strong>X:</strong> eXchange: Encourage customers to share their experiences and suggestions.</li>
-                <li><strong>Y:</strong> Yearn for improvement: Always look for ways to enhance your service.</li>
-                <li><strong>Z:</strong> Zeal for knowledge: Stay curious and continuously learn.</li>
-            </ul>
+            <h2>A to Z</h2>
+            <p>Step-by-step guide on handling customer issues from A to Z.</p>
+        </div>
+
+        <!-- Success Section -->
+        <div class="success-section">
+            <h2>How to Succeed in Amazon UK Customer Service</h2>
+            <p>Learn tips and tricks to provide the best customer service experience.</p>
+        </div>
+
+        <!-- Handle Customers Section -->
+        <div class="handle-customers-section" id="handle-customers">
+            <h2>Handle Customers</h2>
+            <p>Best practices and strategies for dealing with customers effectively and maintaining high customer satisfaction.</p>
         </div>
     </main>
 
     <footer>
-        <p>© 2024 Abdelrahman</p>
+        <p>Created by Abdelrahman</p>
     </footer>
 
-    <script>
-        // Function to handle click events for order types
-        document.querySelectorAll('.order-type').forEach(item => {
-            item.addEventListener('click', () => {
-                item.classList.toggle('active');
-            });
-        });
-
-        // Translate to Arabic function
-        function translateToArabic() {
-            const translations = {
-                "Amazon UK Customer Service Study": "دراسة خدمة العملاء في أمازون المملكة المتحدة",
-                "Click on the order types to see more details": "انقر على أنواع الطلبات لرؤية المزيد من التفاصيل",
-                "Knowledge Center": "مركز المعرفة",
-                "How to Handle Customers": "كيفية التعامل مع العملاء",
-                "Empathy and Sympathy Examples": "أمثلة على التعاطف والتعاطف",
-                "Translate to Arabic": "ترجم إلى العربية",
-                "Order Types": "أنواع الطلبات",
-                "Actions and Options": "الإجراءات والخيارات",
-                "A to Z Information for Success": "معلومات من الألف إلى الياء للنجاح"
-            };
-
-            document.body.innerHTML = document.body.innerHTML.replace(/(Amazon UK Customer Service Study|Click on the order types to see more details|Knowledge Center|How to Handle Customers|Empathy and Sympathy Examples|Translate to Arabic|Order Types|Actions and Options|A to Z Information for Success)/g, (match) => translations[match]);
-        }
-    </script>
 </body>
 
 </html>
