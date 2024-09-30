@@ -22,11 +22,11 @@
             background-color: #00796b; /* Teal */
             color: white;
             text-align: center;
-            padding: 2rem;
+            padding: 1.5rem; /* Adjusted for mobile */
         }
 
         main {
-            padding: 2rem;
+            padding: 1rem; /* Adjusted for mobile */
             background-color: #fff;
             margin: 1rem auto;
             max-width: 900px;
@@ -44,7 +44,7 @@
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem; /* Adjusted for mobile */
             padding: 1rem;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -73,21 +73,24 @@
             position: relative; /* Changed to relative for proper alignment */
             bottom: 0;
             width: 100%;
-            margin-top: 2rem;
+            margin-top: 1rem; /* Adjusted for mobile */
             font-size: 0.8rem; /* Smaller font for name */
         }
 
         /* Navigation */
         nav {
             text-align: center;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem; /* Adjusted for mobile */
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            justify-content: center; /* Center the links */
         }
 
         nav a {
             text-decoration: none;
             color: #00796b;
-            padding: 0.5rem 1rem;
-            margin: 0 0.5rem;
+            padding: 0.5rem 0.75rem; /* Adjusted for mobile */
+            margin: 0.25rem; /* Adjusted for mobile */
             background-color: #b2dfdb; /* Light teal */
             border-radius: 5px;
             transition: background-color 0.3s ease;
@@ -99,7 +102,7 @@
 
         /* Styles for empathy and sympathy examples */
         .empathy-sympathy {
-            margin-top: 2rem;
+            margin-top: 1.5rem; /* Adjusted for mobile */
             padding: 1rem;
             background-color: #e0f7fa; /* Light cyan */
             border-radius: 8px;
@@ -108,7 +111,7 @@
 
         /* Styles for success section */
         .success-section, .handle-customers-section {
-            margin-top: 2rem;
+            margin-top: 1.5rem; /* Adjusted for mobile */
             padding: 1rem;
             background-color: #f9fbe7; /* Light yellow */
             border-radius: 8px;
@@ -117,7 +120,7 @@
 
         /* Styles for the A to Z section */
         .a-z-section {
-            margin-top: 2rem;
+            margin-top: 1.5rem; /* Adjusted for mobile */
             padding: 1rem;
             background-color: #ffe0b2; /* Light orange */
             border-radius: 8px;
@@ -128,7 +131,7 @@
         .translate-button {
             background-color: #dcedc8; /* Light green */
             border: none;
-            padding: 10px 20px;
+            padding: 8px 16px; /* Adjusted for mobile */
             border-radius: 5px;
             cursor: pointer;
             font-size: 1rem;
@@ -137,6 +140,26 @@
 
         .translate-button:hover {
             background-color: #c5e1a5; /* Darker green */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            header {
+                padding: 1rem; /* Smaller padding for mobile */
+            }
+
+            main {
+                padding: 0.5rem; /* Smaller padding for mobile */
+            }
+
+            nav a {
+                padding: 0.5rem; /* Smaller padding for mobile */
+                margin: 0.2rem; /* Smaller margin for mobile */
+            }
+
+            footer {
+                font-size: 0.7rem; /* Smaller font for mobile */
+            }
         }
     </style>
 </head>
@@ -197,91 +220,6 @@
             </div>
         </section>
 
-        <!-- Amazon CTS Section -->
-        <section id="amazon-cts">
-            <h2>Amazon CTS</h2>
-
-            <h3>Never Do List</h3>
-            <ul>
-                <li><strong>Never Ignore the Customer:</strong> Always acknowledge the customer's presence and their issues promptly.</li>
-                <li><strong>Never Be Rude or Disrespectful:</strong> Maintain a polite and respectful tone, regardless of the customer's attitude.</li>
-                <li><strong>Never Interrupt the Customer:</strong> Let the customer finish speaking before you respond.</li>
-                <li><strong>Never Blame the Customer:</strong> Avoid placing blame on the customer for the problem they are experiencing.</li>
-                <li><strong>Never Make Promises You Can't Keep:</strong> Only commit to actions you can deliver on to maintain trust.</li>
-                <li><strong>Never Use Negative Language:</strong> Avoid phrases like “you can’t,” “I won’t,” “it’s not possible.” Instead, focus on what you can do.</li>
-                <li><strong>Never Argue with the Customer:</strong> Stay calm and professional, even if the customer is angry or unreasonable.</li>
-                <li><strong>Never Give Incomplete Information:</strong> Provide clear, complete, and accurate information to the customer.</li>
-                <li><strong>Never Transfer Without Explanation:</strong> Always explain why a transfer is necessary and ensure the customer is connected to the right person.</li>
-                <li><strong>Never Leave the Customer on Hold for Too Long:</strong> If a hold is necessary, check in regularly and explain the reason for the wait.</li>
-                <li><strong>Never Show a Lack of Knowledge:</strong> Be knowledgeable about your products or services and seek help if you are unsure about something.</li>
-                <li><strong>Never Dismiss Customer Complaints:</strong> Treat all complaints seriously and investigate them thoroughly.</li>
-                <li><strong>Never Take Criticism Personally:</strong> Remain objective and focus on resolving the issue rather than reacting emotionally.</li>
-                <li><strong>Never Use Technical Jargon:</strong> Avoid using technical terms that the customer might not understand; use simple and clear language.</li>
-                <li><strong>Never Rush the Customer:</strong> Allow the customer to express their concerns fully without making them feel hurried.</li>
-                <li><strong>Never Fail to Follow Up:</strong> If a follow-up is promised, ensure it is done in a timely manner to show the customer that their issue is important.</li>
-            </ul>
-
-            <h3>Practical Examples and Alternatives</h3>
-            <ul>
-                <li>Instead of "I don’t know," say: <em>"Let me find that information for you."</em></li>
-                <li>Instead of "That’s not my job," say: <em>"Let me connect you with the person who can help you."</em></li>
-                <li>Instead of "You’re wrong," say: <em>"I understand your perspective. Let’s look at this together."</em></li>
-                <li>Instead of "Calm down," say: <em>"I can see that this is frustrating. Let’s see how we can resolve it."</em></li>
-                <li>Instead of "We can’t do that," say: <em>"Here’s what we can do to help."</em></li>
-            </ul>
-
-            <h3>Types of Orders</h3>
-            <ul>
-                <li><strong>AFN:</strong> (Sold and fulfilled by Amazon)
-                    <ul>
-                        <li>Refund</li>
-                        <li>Replacement</li>
-                        <li>Repair</li>
-                        <li>Discount</li>
-                    </ul>
-                </li>
-                <li><strong>FBA:</strong> (Fulfilled by Amazon, sold by third party seller)
-                    <ul>
-                        <li>Refund only</li>
-                    </ul>
-                </li>
-                <li><strong>CSBA:</strong> (Customer service by Amazon, sold and fulfilled by third party seller)
-                    <ul>
-                        <li>Refund only</li>
-                        <li>Contact seller to confirm the return</li>
-                        <li>Contact seller in case of delay</li>
-                        <li>Contact seller for product troubleshooting</li>
-                    </ul>
-                </li>
-                <li><strong>MFN:</strong> (Market place Fulfillment Network, sold and fulfilled by third party seller)
-                    <ul>
-                        <li>Warranty by the seller</li>
-                        <li>Shipping fees set by the seller</li>
-                        <li>The only type of order which is not covered by Prime</li>
-                        <li><em>Note:</em> Advice to contact the seller for requests</li>
-                    </ul>
-                </li>
-                <li><strong>Warehouse Deals:</strong> (AFN items but used/missing accessories)
-                    <ul>
-                        <li>Refund</li>
-                        <li>Discount</li>
-                    </ul>
-                </li>
-                <li><strong>Global Store:</strong> (Amazon sites)
-                    <ul>
-                        <li>Refund on return only</li>
-                    </ul>
-                </li>
-                <li><strong>Try Before You Buy:</strong> (Amazon Wardrobe)
-                    <ul>
-                        <li>For Prime members only</li>
-                        <li>Ship up to 6 items at a time to try on free at home for 7 days</li>
-                        <li>Charged only for the items selected to keep</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
         <!-- MFN Section -->
         <section id="mfn" class="order-type">
             <h2>4- MFN: Marketplace Fulfillment Network</h2>
@@ -303,6 +241,25 @@
             </div>
         </section>
 
+           <!-- Existing Code Structure -->
+
+<!-- Add the new Amazon CTS Section here -->
+<section id="amazon-cts">
+  <h2>Amazon CTS</h2>
+
+  <h3>Never Do List</h3>
+  <ul>
+    <li><strong>Never Ignore the Customer:</strong> Always acknowledge the customer's presence and their issues promptly.</li>
+    <li><strong>Never Be Rude or Disrespectful:</strong> Maintain a polite and respectful tone, regardless of the customer's attitude.</li>
+    <li><strong>Never Interrupt the Customer:</strong> Let the customer finish speaking before you respond.</li>
+    <li><strong>Never Blame the Customer:</strong> Avoid placing blame on the customer for the problem they are experiencing.</li>
+    <li><strong>Never Make Promises You Can't Keep:</strong> Only commit to actions you can deliver on to maintain trust.</li>
+    <li><strong>Never Use Negative Language:</strong> Avoid phrases like “you can’t,” “I won’t,” “it’s not possible.” Instead, focus on what you can do.</li>
+    <li><strong>Never Argue with the Customer:</strong> Stay calm and professional, even if the customer is angry or unreasonable.</li>
+    <li><strong>Never Give Incomplete Information:</strong> Provide clear, complete, and accurate information to the customer.</li>
+    <li><strong>Never Transfer Without Explanation:</strong> Always explain why a transfer is necessary and ensure the customer is connected to the right department.</li>
+    <li><strong>Never Forget Follow-ups:</strong> If you promise to follow up, ensure you do so to reinforce reliability.</li>
+  </ul>
         <!-- A to Z Section -->
         <div class="a-z-section" id="a-z">
             <h2>A to Z Information for Success</h2>
