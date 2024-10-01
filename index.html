@@ -241,6 +241,77 @@
             </div>
         </section>
 
+        <section id="wms">
+  <h2>WMS: Post Dispatch – Where is My Stuff?</h2>
+
+  <h3>1. Common Issues:</h3>
+  <ul>
+    <li>Lost</li>
+    <li>Not Delivered</li>
+    <li>Rejected</li>
+    <li>Damaged</li>
+    <li>Delivery Attempt</li>
+    <li>Out for Delivery</li>
+    <li>Delayed</li>
+    <li>Undeliverable</li>
+    <li>DNR (Delivery Not Received)</li>
+  </ul>
+
+  <h3>2. Scenarios and Actions:</h3>
+  <p><strong>If:</strong></p>
+  <ul>
+    <li>Lost in transit</li>
+    <li>Delayed</li>
+    <li>Rejected</li>
+    <li>Damaged</li>
+  </ul>
+
+  <p><strong>Or:</strong></p>
+  <ul>
+    <li>Refused, Stopped, or Returned</li>
+    <li>Delivery Attempt</li>
+    <li>Out for Delivery</li>
+    <li>DNR</li>
+  </ul>
+
+  <p><strong>Then:</strong> Advise the customer to wait for the Estimated Delivery Date (EDD) or Final Resolution Date (FRD).</p>
+
+  <h3>3. Special Cases:</h3>
+  <ul>
+    <li><strong>High-Value Items:</strong> An OTP (One-Time Password) is sent to the customer when the item is marked "out for delivery".</li>
+    <li><strong>18+ Deliveries:</strong> The carrier will request the customer’s ID and signature.</li>
+  </ul>
+
+  <h3>4. Handling Delivery Not Received (DNR):</h3>
+  <p>Before proceeding, ask the following questions to confirm the situation:</p>
+  <ol>
+    <li>Have you checked your safe places, neighbors, or household members to see if they received the item on your behalf?</li>
+    <li>Could you please confirm your delivery address?</li>
+    <li>If a delivery photo is available, can you confirm the location shown in the photo is your address/workplace?</li>
+  </ol>
+
+  <h3>5. What to Do:</h3>
+  <p>Check if the customer has reported two previous DNRs within the last 30 days at the same delivery address (Amazon carrier only).</p>
+
+  <h4>Transfer to SDS:</h4>
+  <ul>
+    <li>If the item is worth more than £800.</li>
+    <li>If delivered to the wrong address despite specific delivery instructions (Amazon carriers only).</li>
+    <li>If this is the 3rd DNR at the same address with no FRD, pull the Andon Cord.</li>
+  </ul>
+
+  <h3>6. Handling CAP (Customer Abuse Protocol):</h3>
+  <p>If a CAP warning appears, take action if possible (e.g., refund, replacement).</p>
+  <p>If unable to act, advise waiting for FRD/EDD, and escalate if necessary.</p>
+
+  <h3>Common Shipping Carriers:</h3>
+  <ul>
+    <li>UPS</li>
+    <li>DPD</li>
+    <li>Royal Mail</li>
+  </ul>
+</section>
+
            <!-- Existing Code Structure -->
 
 <!-- Add the new Amazon CTS Section here -->
