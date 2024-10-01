@@ -4,164 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon UK Customer Service Study</title>
-    <style>
-        /* Base Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #e8f6f3; /* Light teal background */
-            color: #333;
-        }
+  <style>
+    /* Base Styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e8f6f3; /* Light teal background */
+        color: #333;
+        line-height: 1.6;
+    }
 
-        html {
-            scroll-behavior: smooth; /* Enable smooth scrolling */
-        }
+    html {
+        scroll-behavior: smooth; /* Enable smooth scrolling */
+    }
 
+    header {
+        background-color: #00796b; /* Teal */
+        color: white;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 1.25rem;
+    }
+
+    main {
+        padding: 1rem;
+        background-color: #fff;
+        margin: 1rem auto;
+        max-width: 900px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2, h3 {
+        color: #00796b;
+        margin-top: 1rem;
+    }
+
+    p {
+        margin: 0.75rem 0;
+    }
+
+    /* Styling for square fields with shadows */
+    .order-type {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .order-type:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Initially hide details */
+    .order-details {
+        display: none;
+        padding-top: 1rem;
+    }
+
+    .order-type.active .order-details {
+        display: block;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: #00796b;
+        color: white;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    /* Navigation */
+    nav {
+        text-align: center;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #00796b;
+        padding: 0.5rem 1rem;
+        margin: 0.25rem;
+        background-color: #b2dfdb; /* Light teal */
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: #80cbc4; /* Darker teal */
+    }
+
+    /* Sections */
+    .empathy-sympathy, .success-section, .handle-customers-section, .a-z-section {
+        margin-top: 1.5rem;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .empathy-sympathy {
+        background-color: #e0f7fa; /* Light cyan */
+    }
+
+    .success-section, .handle-customers-section {
+        background-color: #f9fbe7; /* Light yellow */
+    }
+
+    .a-z-section {
+        background-color: #ffe0b2; /* Light orange */
+    }
+
+    /* Button styles */
+    .translate-button {
+        background-color: #dcedc8; /* Light green */
+        border: none;
+        padding: 8px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        margin-top: 1rem;
+        transition: background-color 0.3s ease;
+    }
+
+    .translate-button:hover {
+        background-color: #c5e1a5; /* Darker green */
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
         header {
-            background-color: #00796b; /* Teal */
-            color: white;
-            text-align: center;
-            padding: 1.5rem; /* Adjusted for mobile */
+            padding: 1rem;
+            font-size: 1.1rem;
         }
 
         main {
-            padding: 1rem; /* Adjusted for mobile */
-            background-color: #fff;
-            margin: 1rem auto;
-            max-width: 900px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1, h2, h3 {
-            color: #00796b;
-        }
-
-        /* Styling for square fields with shadows */
-        .order-type {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 1.5rem; /* Adjusted for mobile */
-            padding: 1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .order-type:hover {
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Initially hide details */
-        .order-details {
-            display: none;
-            padding-top: 1rem;
-        }
-
-        /* Add smooth transition */
-        .order-type.active .order-details {
-            display: block;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #00796b; /* Teal */
-            color: white;
-            position: relative; /* Changed to relative for proper alignment */
-            bottom: 0;
-            width: 100%;
-            margin-top: 1rem; /* Adjusted for mobile */
-            font-size: 0.8rem; /* Smaller font for name */
-        }
-
-        /* Navigation */
-        nav {
-            text-align: center;
-            margin-bottom: 1rem; /* Adjusted for mobile */
-            display: flex;
-            flex-wrap: wrap; /* Allow wrapping on smaller screens */
-            justify-content: center; /* Center the links */
+            padding: 0.75rem;
         }
 
         nav a {
-            text-decoration: none;
-            color: #00796b;
-            padding: 0.5rem 0.75rem; /* Adjusted for mobile */
-            margin: 0.25rem; /* Adjusted for mobile */
-            background-color: #b2dfdb; /* Light teal */
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            padding: 0.5rem;
+            margin: 0.2rem;
         }
 
-        nav a:hover {
-            background-color: #80cbc4; /* Darker teal */
+        footer {
+            font-size: 0.8rem;
         }
-
-        /* Styles for empathy and sympathy examples */
-        .empathy-sympathy {
-            margin-top: 1.5rem; /* Adjusted for mobile */
-            padding: 1rem;
-            background-color: #e0f7fa; /* Light cyan */
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Styles for success section */
-        .success-section, .handle-customers-section {
-            margin-top: 1.5rem; /* Adjusted for mobile */
-            padding: 1rem;
-            background-color: #f9fbe7; /* Light yellow */
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Styles for the A to Z section */
-        .a-z-section {
-            margin-top: 1.5rem; /* Adjusted for mobile */
-            padding: 1rem;
-            background-color: #ffe0b2; /* Light orange */
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Button styles */
-        .translate-button {
-            background-color: #dcedc8; /* Light green */
-            border: none;
-            padding: 8px 16px; /* Adjusted for mobile */
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-            margin-top: 1rem;
-        }
-
-        .translate-button:hover {
-            background-color: #c5e1a5; /* Darker green */
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 600px) {
-            header {
-                padding: 1rem; /* Smaller padding for mobile */
-            }
-
-            main {
-                padding: 0.5rem; /* Smaller padding for mobile */
-            }
-
-            nav a {
-                padding: 0.5rem; /* Smaller padding for mobile */
-                margin: 0.2rem; /* Smaller margin for mobile */
-            }
-
-            footer {
-                font-size: 0.7rem; /* Smaller font for mobile */
-            }
-        }
-    </style>
+    }
+</style>
+    
 </head>
 <body>
 
